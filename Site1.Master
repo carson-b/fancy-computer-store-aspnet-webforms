@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="ComputerStore.Site1" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <meta charset="utf-8">
+    <title>Fancy Computer Store</title>
+    <link href="fancyComputerStore.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="stylesheet">
+    <script src="jQueryAssets/SpryDOMUtils.js"></script>
+    <script src="Untitled-1.js"></script>
+    <script src="redirect.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+    <div id="wrapper">
+            <header>
+                <a href="default.aspx">
+                    <img src="images/logo.png" alt="logo" />
+                </a>
+                <a href="default.aspx">
+                    <div class="company_name">Fancy Computer Store</div>
+                </a>
+                <nav>
+                    <ul>
+                        <li id="account">
+                            <asp:PlaceHolder ID="signInOrOut" runat="server"></asp:PlaceHolder>
+                        </li>
+                        <li id="register">
+                            <asp:PlaceHolder ID="registerHolder" runat="server"></asp:PlaceHolder>
+                        </li>
+                        <li id="cart"><a href="shoppingCart.aspx">shopping cart</a></li>
+                        <li id="package"><a href="productOverview.aspx?type=packages">Packages</a></li>
+                    </ul>
+                </nav>
+            </header>
+        <section>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </section>
+        <footer>
+                <div id="footer_links">
+                    <ul>
+                        <li><a href="about.aspx" title="About Us">About</a></li>
+                        <li><a href="contact.aspx" title="Contact Us">Contact</a></li>
+                        <li><a href="careers.aspx" title="Careers">Careers</a></li>
+                        <li><a href="terms.aspx" title="Terms and Conditions">Terms and Conditions</a></li>
+                    </ul>
+                </div>
+                <div id="footer-icons">
+                    <img src="images/phone.png" alt="phone" title="1-555-123-1234" />
+                    <a href="https://twitter.com/fancycomputerstore?lang=en">
+                        <img src="images/twitter.png" alt="twitter" title="Twitter" /></a>
+                    <a href="https://www.facebook.com/FancyComputerStore/">
+                        <img src="images/facebook.png" alt="facebook" title="Facebook" /></a>
+                    <a href="https://www.instagram.com/fancycomputerstore/">
+                        <img src="images/instagram.png" alt="instagram" title="Instagram" /></a>
+                </div>
+                <a href="https://www.paypal.com">
+                    <img src="images/payments.png" alt="payments" class="right" /></a>
+        </footer>
+    </div>
+</body>
+</html>
+
