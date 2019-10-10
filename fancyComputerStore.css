@@ -922,11 +922,11 @@ select{
 }
 
 footer {
-	position:absolute;
+	position:fixed;
  	bottom:0;
  	left:0;
 	height: 45px;
-	width: 99%;
+	width: 100%;
 	min-width: 1500px;
 	padding: 15px;
 	background-color: cadetblue;
